@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/open/Documents/RestAPI/ENV"
+set -gx VIRTUAL_ENV "/Users/open/Documents/GitHub/RestAPI/RestFlask/ENV"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
