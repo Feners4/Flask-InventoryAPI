@@ -1,4 +1,6 @@
 from flask import render_template
+from mysqldb import CheckInventory
+
 import connexion
 
 # Create the application instance
@@ -16,6 +18,10 @@ def home():
     :return:        the rendered template 'home.html'
     """
     return render_template('home.html')
+
+@app.route('/test/')
+def inve():
+	return CheckInventory()
 
 # If we're running in stand alone mode, run the application
 if __name__ == '__main__':

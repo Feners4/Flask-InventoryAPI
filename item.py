@@ -1,4 +1,5 @@
 from datetime import datetime
+from mysqldb import CheckInventory
 
 def get_timestamp():
     return datetime.now().strftime(("%Y-%m-%d %H:%M:%S"))
@@ -22,10 +23,13 @@ ITEMS = {
 # Create a handler for our read (GET) people
 def read():
     """
-    This function responds to a request for /api/people
-    with the complete lists of people
+    This function responds to a request for /api/item
+    with the complete lists of items
 
-    :return:        sorted list of people
+    :return:        sorted list of items
     """
-    # Create the list of people from our data
+    # Create the list of items from our data
     return [ITEMS[key] for key in sorted(ITEMS.keys())]
+
+def readSQL():
+    return CheckInventory()
