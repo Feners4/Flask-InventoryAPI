@@ -2,7 +2,7 @@ swagger: "2.0"
 info:
   description: This is the swagger file that goes with our server code
   version: "1.0.0"
-  title: Swagger REST Article
+  title: Inventory Flask and REST
 consumes:
   - "application/json"
 produces:
@@ -11,16 +11,16 @@ produces:
 basePath: "/api"
 
 paths:
-  /item:
+  /mysqldb:
     get:
-      operationId: "item.read"
+      operationId: "mysqldb.CheckInventory"
       tags:
-        - "Item"
-      summary: "The item data structure supported by the server application"
-      description: "Read the list of items"
+        - "Inventory"
+      summary: "The inventory data structure supported by the server application"
+      description: "Return items in Inventory"
       responses:
         200:
-          description: "Successful read item list operation"
+          description: "Successful read inventory operation"
           schema:
             type: "array"
             items:
