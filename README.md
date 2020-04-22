@@ -1,6 +1,6 @@
 Example of an Inventory API using Flask, REST, and a MYSQL database.
 
-##How to use:
+## How to use:
 
 ```
 git clone git@github.com:Feners4/Flask-InventoryAPI.git
