@@ -23,4 +23,6 @@ http://0.0.0.0:5000/ (Home)
 
 
 ```
-A Swagger UI has been integrated for better use of API data structures. It can be accessed with `http://0.0.0.0:5000/api/ui`
+A Swagger UI has been integrated for better use of API data structures. It can be accessed with `http://0.0.0.0:5000/api/ui`.
+
+MySQL database has to be running. Database setup can be found in `mysqldb.py`.
