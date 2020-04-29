@@ -14,7 +14,7 @@ Start the Flask server
 
 Now that the Flask server is running, in a browser we can go to `http://0.0.0.0:5000/` or the address you will use as home page for your server. 
 
-In this specific project, there are three predefined routes:
+In this specific project there are three predefined routes:
 ```
 http://0.0.0.0:5000/ (Home)
 /addinventory
